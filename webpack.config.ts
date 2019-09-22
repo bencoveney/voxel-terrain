@@ -1,13 +1,13 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScssConfigWebpackPlugin = require('scss-config-webpack-plugin');
-const TsConfigWebpackPlugin = require('ts-config-webpack-plugin');
-const path = require('path');
-const package = require('./package.json');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ScssConfigWebpackPlugin = require("scss-config-webpack-plugin");
+const TsConfigWebpackPlugin = require("ts-config-webpack-plugin");
+const path = require("path");
+const package = require("./package.json");
+const webpack = require("webpack");
 
 module.exports = {
   output: {
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, "docs")
   },
   plugins: [
     new HtmlWebpackPlugin({
